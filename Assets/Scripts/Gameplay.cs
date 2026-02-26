@@ -33,11 +33,7 @@ public class Gameplay : MonoBehaviour
             bossText.text = "Boss HP: " + (bossHP -= 10);
         }
 
-        timesofar = time.time >= 5f;
-        if (timesofar && playerHP != 0)
-        {
-            playerText.text = "Player HP: " + (playerHP -= 10);
-        }
+
 
 
         if (bossHP == 0)
